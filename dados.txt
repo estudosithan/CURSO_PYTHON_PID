@@ -1,0 +1,3 @@
+Nome: Íthan, Idade: 19
+Nome: Hálisson, Idade: 21
+Nome: Emerson, Idade: 19
