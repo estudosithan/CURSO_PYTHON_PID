@@ -30,40 +30,43 @@ def finalizar_app():
 def opcao_errada():
     print("Opção inválida...")
     input("digite uma tecla para poder continuar: ")
-    input() #para dar tempo ao usuário
+    input()  # para dar tempo ao usuário
     main()
+
 
 def cansou():
     input("digite uma tecla para poder sair: ")
     main()
 
+
 restaurantes = []
 
+
 def cadastrar_restaurante():
-    
-    os.system('cls')
+
+    os.system("cls")
     print("Cadastro de novos restaurantes")
-    nome_do_restaurante = input('Digite o nome do restaurante que deseja cadastrar: ')
+    nome_do_restaurante = input("Digite o nome do restaurante que deseja cadastrar: ")
     restaurantes.append(nome_do_restaurante)
-    print(f'O restaurante {nome_do_restaurante} foi cadastrado.')
-    print('Digite uma tecla para voltar ao menu principal... ')
+    print(f"O restaurante {nome_do_restaurante} foi cadastrado.")
+    print("Digite uma tecla para voltar ao menu principal... ")
     main()
 
+
 def listar_restaurantes():
-    os.system('cls')
-    print('Segue a lista: ')
+    os.system("cls")
+    print("Segue a lista: ")
     if len(restaurantes) == 0:
-        print('Nenhum restaurante cadastrado ainda')
+        print("Nenhum restaurante cadastrado ainda")
     for restaurante in restaurantes:
-        print(f'{restaurante}')
-    print('\nDigite uma tecla para voltar ao menu principal... ')
+        print(f"{restaurante}")
+    print("\nDigite uma tecla para voltar ao menu principal... ")
     main()
 
 
 def escolher_opcao():
     try:
         opcao_escolhida = int(input("Escolha uma opção: "))
-       
 
         if opcao_escolhida == 1:
             print("\nCadastrar restaurante")
@@ -80,6 +83,7 @@ def escolher_opcao():
     except:
         print("\nTenta mais uma vez...eu sei q vc consegue !")
         opcao_errada()
+
 
 def main():
     exibir_nome_do_programa()

@@ -3,19 +3,23 @@ class DummyCarro:
         self.modelo = modelo
         self.__placa = placa  # Atributo privado
         self.cor = cor
-    
+
     def get_placa(self):
         """Método para acessar a placa do carro de forma controlada"""
         return self.__placa
+
 
 class Pessoa:
     def __init__(self, nome, sobrenome, carro):
         self.nome = nome
         self.sobrenome = sobrenome
         self.carro = carro  # Recebe um objeto da classe DummyCarro
-    
+
     def apresentar(self):
-        print(f"Olá, eu sou {self.nome} {self.sobrenome} e tenho um {self.carro.modelo} {self.carro.cor}.")
+        print(
+            f"Olá, eu sou {self.nome} {self.sobrenome} e tenho um {self.carro.modelo} {self.carro.cor}."
+        )
+
 
 # Criando um objeto da classe DummyCarro
 carro_pessoa = DummyCarro("Celta", "ABC-1234", "preto")
