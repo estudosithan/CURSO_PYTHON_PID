@@ -3,9 +3,8 @@
 
 class NomePessoas:
     def __init__(self, nome, sobrenome, carro):  # faz as atribuições
-        self.apodo = (
-            nome  # posso criar atributos com nome diferente do parâmetro passado
-        )
+        self.apodo = nome # posso criar atributos com nome diferente do parâmetro passado
+
         self.sobrenome = sobrenome
         self.carro = carro
 
