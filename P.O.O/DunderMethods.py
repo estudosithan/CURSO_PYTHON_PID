@@ -15,3 +15,5 @@
  # __neg__(self) - -self
  # __str__(self) - str
  # __repr__(self) - str
+
+#Acima são os Dunder methos principais do python e o que eles utilizam como parâmetro
